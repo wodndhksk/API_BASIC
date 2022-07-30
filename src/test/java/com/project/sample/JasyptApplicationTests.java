@@ -1,4 +1,4 @@
-package com.project.sample.test;
+package com.project.sample;
 
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.junit.jupiter.api.Test;
