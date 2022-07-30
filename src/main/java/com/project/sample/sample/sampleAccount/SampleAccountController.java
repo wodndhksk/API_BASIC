@@ -19,11 +19,11 @@ public class SampleAccountController {
     private final SampleAccountService accountService;
 
     /**
-     * 의존성 주입은 필드 주입보다는 생성자 주입을 권장. (생성자의 매개변수가 하나라면 @Autowired 어노테이션 생략가능)
+     * 의존성 주입은 필드 주입보다는 생성자 주입을 권장. (생성자가 하나라면 @Autowired 어노테이션 생략가능)
      * @param accountServiceImpl
      */
-    public SampleAccountController(SampleAccountServiceImpl accountServiceImpl) {
-        this.accountService = accountServiceImpl;
+    public SampleAccountController(SampleAccountServiceImpl accountService) {
+        this.accountService = accountService;
     }
 
     /**
