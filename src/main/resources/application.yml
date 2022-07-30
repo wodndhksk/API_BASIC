@@ -1,0 +1,38 @@
+spring:
+
+  profiles:
+    active: dev
+
+  devtools:
+    livereload:
+      enabled: true
+
+  freemarker:
+    cache: false
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+  # DB
+  datasource:
+    username: admin
+    password: Asdf1234
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://database-project.ckar8tt6sszt.ap-northeast-2.rds.amazonaws.com:3306/db_project?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+
+  logging:
+    level:
+      com.fish.encyclopedia: debug
+      com.fish.encyclopedia.OAuth2.controller: debug
+      com.project.study: error
+      com.project.study.controller: debug
+
+      org:
+        hibernate:
+          SQL: DEBUG
+          type: trace
