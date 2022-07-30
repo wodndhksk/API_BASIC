@@ -8,5 +8,9 @@ import java.util.List;
 
 @Repository
 public interface SampleAccountRepository extends JpaRepository<SampleAccount, Integer> {
+    /**
+     * SampleAccount 데이터 전체 조회 (SELECT)
+     * @return
+     */
     List<SampleAccount> findAll();
 }

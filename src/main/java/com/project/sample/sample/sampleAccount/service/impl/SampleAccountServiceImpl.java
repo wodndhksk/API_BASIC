@@ -15,6 +15,11 @@ public class SampleAccountServiceImpl implements SampleAccountService {
     @Autowired
     private SampleAccountRepository accountRepository;
 
+    /**
+     * 회원 정보 저장
+     * @param name
+     * @param password
+     */
     @Override
     public void crateAccount(String name, String password) {
         SampleAccount account = SampleAccount.builder()
@@ -25,11 +30,19 @@ public class SampleAccountServiceImpl implements SampleAccountService {
         accountRepository.save(account);
     }
 
+    /**
+     * 회원 전체 조회
+     * @return
+     */
     @Override
     public List<SampleAccount> getAllAcount() {
         return accountRepository.findAll();
     }
 
+    /**
+     * 회원 코드 랜덤 생성 (테스트용)
+     * @return
+     */
     public String randomCode(){
         Random random = new Random();
         int code = random.nextInt(10000);
