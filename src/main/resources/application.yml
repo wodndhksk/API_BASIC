@@ -5,6 +5,11 @@ jasypt:
 
 spring:
 
+  # https://www.inflearn.com/questions/230160
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
   profiles:
     active: dev
 
