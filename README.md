@@ -7,4 +7,5 @@ Java 11 <br>
 Gradle <br>
 JPA <br> 
 MySql (AWS RDS) <br>
+Swagger3 <br>
 >
