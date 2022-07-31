@@ -2,9 +2,9 @@
 
 ## 1. 프로젝트 생성
 
-> Spring boot 2.7.2
-Java 11
-Gradle
-JPA
-MySql (AWS RDS)
+> Spring boot 2.7.2 <br>
+Java 11 <br>
+Gradle <br>
+JPA <br> 
+MySql (AWS RDS) <br>
 >
