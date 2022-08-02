@@ -2,6 +2,7 @@ package com.project.sample.sample.sampleAccount;
 
 import com.project.sample.sample.sampleAccount.service.SampleAccountService;
 import com.project.sample.sample.sampleAccount.service.impl.SampleAccountServiceImpl;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,18 +14,11 @@ import java.util.List;
  * @RestController 설명 : select, insert 간단 테스트
  */
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/sample/account")
 public class SampleAccountController {
 
     private final SampleAccountService accountService;
-
-    /**
-     * 의존성 주입은 필드 주입보다는 생성자 주입을 권장. (생성자가 하나라면 @Autowired 어노테이션 생략가능)
-     * @param accountServiceImpl
-     */
-    public SampleAccountController(SampleAccountServiceImpl accountService) {
-        this.accountService = accountService;
-    }
 
     /**
      * @Method Name : sampleSignUp
